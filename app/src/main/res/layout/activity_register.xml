@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="agregar4"
+    tools:context=".RegisterActivity">
+
+
+    <EditText
+        android:id="@+id/txt_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="385dp"
+        android:ems="10"
+        android:hint="Ingrese Numero"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="39dp"
+        android:fontFamily="monospace"
+        android:text="Registro"
+        app:layout_constraintBottom_toTopOf="@+id/txt_number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suma"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_resta"
+        app:layout_constraintStart_toStartOf="@+id/txt_number" />
+
+    <Button
+        android:id="@+id/btn_resta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="56dp"
+        android:text="Resta"
+        app:layout_constraintStart_toEndOf="@+id/btn_next"
+        app:layout_constraintTop_toBottomOf="@+id/txt_number" />
+
+    <Button
+        android:id="@+id/btnNum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="agregar4"
+        android:text="4"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnNum2"
+        app:layout_constraintEnd_toEndOf="@+id/btn_next"
+        app:layout_constraintStart_toStartOf="@+id/btn_next" />
+
+    <Button
+        android:id="@+id/btnNum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginBottom="201dp"
+        android:onClick="agregar8"
+        android:text="8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnNum1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
